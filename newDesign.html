@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="newDesignStyle.css">
+</head>
+<body style="background:  #0062be;" class="cover-container">
+  <div class="container-fluid d-flex w-100 h-100 p-0 mx-auto flex-column">
+<!-- <div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div> -->
+<header>
+  <div class="collapse bg-white p-4 mt-0" id="navbarHeader" > 
+
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-2">
+          <h4 class="text-dark">About us</h4>
+          <p class="text-dark">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-2">
+          <h4 class="text-dark">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark">Follow on Twitter</a></li>
+            <li><a href="#" class="text-dark">Like on Facebook</a></li>
+            <li><a href="#" class="text-dark">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark p-4 text-align-center shadow-sm">
+  
+      <a href="#" class="navbar-brand ">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg> -->
+        <strong >Album</strong>
+      </a>
+      <button class="navbar-toggler  collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon  "></span>
+      </button>
+   
+  </div>
+</header>
+<main role="main mb-0">
+<div class="container-fluid  ">
+  <div class="row mt-4">
+    <div class="col-md-12  d-flex justify-content-center align-items-center">
+      <div class="imgBox mt-2">
+        <img src="pepsi001.png" alt="pepsi" class="pepsi">
+    </div>
+    
+  </div>
+    <div class=" col-sm-12 d-flex justify-content-center mb-2 mt-4" >
+     
+ 
+    <div class="textBox text-white w-75">
+      <h2>That What<span>am Looking for</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, 
+          consequuntur! Explicabo iure recusandae delectus. 
+          Expedita, inventore illum impedit repellendus 
+          fugiat excepturi praesentium amet ex
+           cum at deserunt eos sequi mollitia.</p>
+       <a  href="#" >View All Products</a>
+  </div>
+    
+    </div>
+  </div>
+</div>
+</main>
+<footer class="footer mt-auto mb-4">
+  <div class="container-fluid text-center mb-4">
+    <ul class="thumb d-flex justify-content-between mb-4">
+      <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png'); changeBgColor('#0062be');" alt="pepsi001"></li>
+      <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png'); changeBgColor('#e60c2c');" alt="pepsi002"></li>
+      <li><img src="pepsi003.png"  onclick="imgSlider('pepsi003.png'); changeBgColor('#1e1e1e');" alt="pepsi003"></li>
+ </ul>
+  </div>
+</footer>
+</div>
+
+<script type="text/javascript">
+
+  function imgSlider(anything){
+      document.querySelector('.pepsi').src = anything;
+  }
+  function changeBgColor(color){
+  const scolor = document.querySelector('.cover-container');
+  scolor.style.background = color;
+ 
+}
+  </script>
+</body>
+</html>
